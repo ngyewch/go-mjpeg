@@ -12,8 +12,8 @@ import (
 	"golang.org/x/sync/errgroup"
 )
 
-func doServeUrl(ctx context.Context, cmd *cli.Command) error {
-	inputURL := cmd.StringArg(inputUrlArg.Name)
+func doServeURL(ctx context.Context, cmd *cli.Command) error {
+	inputURL := cmd.StringArg(inputURLArg.Name)
 	if inputURL == "" {
 		return fmt.Errorf("input-url is required")
 	}

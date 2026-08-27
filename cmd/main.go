@@ -45,7 +45,7 @@ var (
 		Name:      "input-file",
 		UsageText: "(input-file)",
 	}
-	inputUrlArg = &cli.StringArg{
+	inputURLArg = &cli.StringArg{
 		Name:      "input-url",
 		UsageText: "(input-url)",
 	}
@@ -73,9 +73,9 @@ var (
 					{
 						Name:   "url",
 						Usage:  "url",
-						Action: doServeUrl,
+						Action: doServeURL,
 						Arguments: []cli.Argument{
-							inputUrlArg,
+							inputURLArg,
 						},
 						Flags: []cli.Flag{
 							listenAddrFlag,
