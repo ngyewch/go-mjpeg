@@ -1,0 +1,29 @@
+version: 2
+project_name: go-mjpeg
+before:
+  hooks:
+    - go generate ./...
+    - go mod tidy
+builds:
+  - main: ./cmd
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+      - darwin
+      - windows
+    goarch:
+      - amd64
+      - arm64
+    ldflags:
+      - -s -w
+      - -X main.version={{ if index .Env "VERSION" }}{{ .Env.VERSION }}{{ else }}{{ .Version }}{{ end }}
+archives:
+  - formats:
+      - zip
+checksum:
+  name_template: 'checksums.txt'
+changelog:
+  disable: true
+release:
+  disable: false
