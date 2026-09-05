@@ -1,8 +1,8 @@
 [tools]
 task = '3.53.1'
-go = '1.27.0'
-goreleaser = '2.17.1'
-'golangci-lint' = '2.13.1'
+go = '1.27.1'
+goreleaser = '2.18.0'
+'golangci-lint' = '2.13.2'
 'github:dominikh/go-tools' = { version = '2026.2.1', exe = 'staticcheck', tar_regex = '^staticcheck_\.' }
 'github:psampaz/go-mod-outdated' = '0.9.0'
 'go:github.com/bobg/mingo/cmd/mingo' = '0.17.0'
