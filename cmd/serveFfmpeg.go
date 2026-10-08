@@ -30,7 +30,7 @@ func doServeFfmpeg(ctx context.Context, cmd *cli.Command) error {
 		ffmpegArgs = append(ffmpegArgs, "-stream_loop", strconv.Itoa(streamLoop))
 	}
 	ffmpegArgs = append(ffmpegArgs,
-		"-use_wallclock_as_timestamps", "1",
+		"-re",
 		"-i", inputPath,
 		"-c:v", "mjpeg",
 		"-an",
