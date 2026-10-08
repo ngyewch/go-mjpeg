@@ -1,14 +1,14 @@
 module github.com/ngyewch/go-mjpeg
 
-go 1.25.0
+go 1.26.0
 
 require (
 	github.com/F2077/go-pubsub v1.2.0
 	github.com/jwalton/go-supportscolor v1.2.0
 	github.com/phsym/console-slog v0.3.1
-	github.com/samber/oops v1.23.1
-	github.com/urfave/cli/v3 v3.11.0
-	golang.org/x/sync v0.22.0
+	github.com/samber/oops v1.23.2
+	github.com/urfave/cli/v3 v3.14.0
+	golang.org/x/sync v0.23.0
 )
 
 require (
